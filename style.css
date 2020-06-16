@@ -1,0 +1,93 @@
+.opacity-2 {
+    opacity:0.5!important;
+  }
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FF7F50;
+}
+
+#nav-menu{
+    padding-right: 5rem;
+    line-height: 3rem;
+}
+#nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#nav-menu li a:hover {
+    background-color: brown;
+    color: white;
+}
+
+#main-content {
+    width: 80%;
+    padding-top: 5rem;
+    
+}
+
+#welcome-section {
+    padding-top: 7rem;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 25vh 25vh;
+    grid-template-areas: 
+    "img info"
+    "img info";
+    overflow: hidden;
+}
+
+#img {
+    grid-area: "img";
+    padding-left: 6rem;
+}
+
+#img img {
+    height: 26rem;
+}
+
+#info {
+    padding-left: 7rem;
+    padding-top: 3rem;
+    grid-area: "info";
+}
+
+
+#info h2 {
+    line-height: 5rem;
+}
+
+#profile-link:hover img, #profile-link2:hover img, #profile-link3:hover img{
+   height: 20vh;
+}
+
+#footer {
+    margin-top: 40px;
+    max-height: 15%;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+}
+
+#footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer > div > p {
+    padding-left: 5rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+
